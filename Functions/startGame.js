@@ -12,6 +12,17 @@ function startGame() {
     
     Level.render();
 
-    var player = new Player();
+    var player = new Player(Level.canvas);
     player.render();
+    player.jump();
+
+    var intervalId = setInterval(
+        function() {
+            // player.jump();
+            player.update();
+            Level.render();
+            player.render();
+        },
+        1000 / Level.frameRate,
+    );
 }
