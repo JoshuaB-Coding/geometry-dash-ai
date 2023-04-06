@@ -1,0 +1,22 @@
+body {
+    background-color: lavender;
+}
+
+#container {
+    position: relative;
+    text-align: center;
+    padding: 0%;
+}
+
+#container canvas, #overlay {
+    align-items: center;
+}
+
+canvas {
+    border: 2px solid grey;
+    background-color: dodgerblue;
+}
+
+h1 {
+    text-align: center;
+}
